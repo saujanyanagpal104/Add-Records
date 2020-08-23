@@ -12,10 +12,6 @@ const GridCustomize = ({
   const [error, setError] = useState(false);
   const [gridTabs, setGridTabs] = useState([]);
 
-  useEffect(() => {
-    setCustomFields([]);
-  }, [setCustomFields]);
-
   const handleClose = () => {
     setSliderState("close");
     setTimeout(() => toggleCustomizeGridBar(false), 1000);

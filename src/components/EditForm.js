@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import moment from "moment";
-import axios from 'axios';
+import axios from "axios";
 
 const EditForm = ({ record, data, handleDataUpdate, setEditForm }) => {
   const [startDate, setStartDate] = useState(new Date());

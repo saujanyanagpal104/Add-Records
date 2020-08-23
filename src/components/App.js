@@ -15,7 +15,7 @@ const App = () => {
   const [fieldsUpdated, setFieldsUpdated] = useState(false);
   const [data, setData] = useState([]);
   const [isFetched, setIsFetched] = useState(false);
-  const [tags, setTags] = useState(['testtag1', 'testtag2']);
+  const [tags, setTags] = useState(["testtag1", "testtag2"]);
   const [tagsBar, toggleTagsBar] = useState(false);
 
   useEffect(() => {
@@ -85,7 +85,14 @@ const App = () => {
           handleCustomFieldsUpdate={handleCustomFieldsUpdate}
         />
       )}
-      {tagsBar && <TagsBar toggleTagsBar={toggleTagsBar} tagsBar={tagsBar} tags={tags} setTags={setTags} />}
+      {tagsBar && (
+        <TagsBar
+          toggleTagsBar={toggleTagsBar}
+          tagsBar={tagsBar}
+          tags={tags}
+          setTags={setTags}
+        />
+      )}
     </div>
   );
 };

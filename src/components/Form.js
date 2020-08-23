@@ -12,7 +12,7 @@ const Form = ({ data, setData, recordsPage, setTogglePage }) => {
   const [fileInfo, setFileInfo] = useState({});
   const [isUploading, setIsUploading] = useState(false);
   const [isUploaded, setIsUploaded] = useState(false);
-  const [uploadedfile, setFile] = useState('');
+  const [uploadedfile, setFile] = useState("");
 
   const handleFormFields = (e) => {
     setFormFields({
@@ -42,8 +42,7 @@ const Form = ({ data, setData, recordsPage, setTogglePage }) => {
       .then((res) => {
         setFileInfo({ fileName: res.data.filename, size: res.data.size });
         setFile(res.data.filename);
-      }
-      );
+      });
     setIsUploading(false);
     setIsUploaded(true);
   };
@@ -103,9 +102,11 @@ const Form = ({ data, setData, recordsPage, setTogglePage }) => {
             <span>Uploading...</span>
           ) : isUploaded ? (
             <span className="upload-details">
-              <span className='file-detail'>Filename: {fileInfo.fileName}</span>
-              <span className='file-detail'>Size: {fileInfo.size}</span>
-              <span className='upload-again-button' onClick={clearUpload}>Upload Again</span>
+              <span className="file-detail">Filename: {fileInfo.fileName}</span>
+              <span className="file-detail">Size: {fileInfo.size}</span>
+              <span className="upload-again-button" onClick={clearUpload}>
+                Upload Again
+              </span>
             </span>
           ) : (
             <div className="upload-pair">
