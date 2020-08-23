@@ -37,7 +37,7 @@ Implemented a record form which can be used to add records to a data grid having
 
 ### Follow the steps to run on local machine:
 
-1. Clone the repo https://github.com/saujanyanagpal104/practice-project-1.git.
+1. Clone the repo https://github.com/saujanyanagpal104/practice.git.
 2. Navigate to the code directory.
 3. Install all the dependencies by running **npm install** in the terminal.
 4. To run the mock api server, navigate to the *api* directory, install all the dependencies by running **npm install** and **npm start** in the terminal.
